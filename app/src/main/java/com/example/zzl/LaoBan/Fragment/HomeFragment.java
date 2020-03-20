@@ -30,9 +30,9 @@ public class HomeFragment extends Fragment {
     private GridView gridView;
     List<Map<String, Object>> data_list = new ArrayList<Map<String, Object>>();
 
-    private int[] icons = {R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher
-            , R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher
-            , R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher};
+    private int[] icons = {R.mipmap.wenti, R.mipmap.bianmin, R.mipmap.gongyi
+            , R.mipmap.zhishi, R.mipmap.tuiguang, R.mipmap.fenxiang
+            , R.mipmap.activity, R.mipmap.shop, R.mipmap.wenti};
     private String[] text = {"问题回答", "便民信息", "有偿公益", "知识学堂", "信息推广", "分享故事", "老年活动", "老人用品", "定位服务"};
 
     /*加载布局文件*/

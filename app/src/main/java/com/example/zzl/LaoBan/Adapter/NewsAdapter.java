@@ -14,10 +14,6 @@ import com.example.zzl.LaoBan.R;
 
 import java.util.List;
 
-/**
- * Created by zzl on 18-8-21.
- */
-
 public class NewsAdapter extends ArrayAdapter<News> implements View.OnClickListener {
     private int resourceId;
     private CallBack mCallBack;
@@ -26,6 +22,7 @@ public class NewsAdapter extends ArrayAdapter<News> implements View.OnClickListe
         super(context, textViewResourceId, objects);
         resourceId = textViewResourceId;
         mCallBack = callBack;
+        notifyDataSetChanged();
     }
 
 
@@ -49,13 +46,16 @@ public class NewsAdapter extends ArrayAdapter<News> implements View.OnClickListe
             viewHolder.newsAuthor = view.findViewById(R.id.news_item_author);
             viewHolder.newsDate = view.findViewById(R.id.news_item_date);
             view.setTag(viewHolder);
+            notifyDataSetChanged();
         } else {
             view = convertView;
             viewHolder = (ViewHolder) view.getTag();
+            notifyDataSetChanged();
         }
 
         if (news.getNews_img() != null) {
             viewHolder.newsImg.setImageBitmap(news.getNews_img());
+            notifyDataSetChanged();
         }
         viewHolder.newsImg.setImageBitmap(news.getNews_img());
         viewHolder.newsTitle.setText(news.getNews_title());
@@ -64,7 +64,7 @@ public class NewsAdapter extends ArrayAdapter<News> implements View.OnClickListe
 
         viewHolder.newsDelete.setTag(position);
         viewHolder.newsDelete.setOnClickListener(this);
-
+        notifyDataSetChanged();
         return view;
     }
 

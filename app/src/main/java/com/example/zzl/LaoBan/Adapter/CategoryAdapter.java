@@ -12,9 +12,6 @@ import com.example.zzl.LaoBan.R;
 
 import java.util.List;
 
-/**
- * Created by zzl on 18-8-20.
- */
 
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHodler> {
     private List<String> categoryList;
@@ -27,6 +24,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
             super(itemView);
             category = itemView.findViewById(R.id.category_text);
         }
+
     }
 
     public CategoryAdapter(List<String> categoryList) {
@@ -45,6 +43,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
                 hodler.category.setTextSize(20);
             }
         });
+        notifyDataSetChanged();
         return hodler;
     }
 
@@ -52,7 +51,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
     public void onBindViewHolder(ViewHodler holder, int position) {
         String category = categoryList.get(position);
         holder.category.setText(category);
-
+        notifyDataSetChanged();
     }
 
     @Override

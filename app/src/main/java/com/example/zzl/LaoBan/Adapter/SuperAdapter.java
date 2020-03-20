@@ -22,6 +22,7 @@ public class SuperAdapter extends ArrayAdapter<Supermarket> implements View.OnCl
         super(context, textViewResourceId, objects);
         resourceId = textViewResourceId;
         mCallBack = callBack;
+        notifyDataSetChanged();
     }
 
 
@@ -45,13 +46,16 @@ public class SuperAdapter extends ArrayAdapter<Supermarket> implements View.OnCl
             viewHolder.superAuthor = view.findViewById(R.id.news_item_author);
             viewHolder.superDate = view.findViewById(R.id.news_item_date);
             view.setTag(viewHolder);
+            notifyDataSetChanged();
         } else {
             view = convertView;
             viewHolder = (ViewHolder) view.getTag();
+            notifyDataSetChanged();
         }
 
         if (supermarket.getImage() != null) {
             viewHolder.superImg.setImageBitmap(supermarket.getImage());
+            notifyDataSetChanged();
         }
         viewHolder.superImg.setImageBitmap(supermarket.getImage());
         viewHolder.superTitle.setText(supermarket.getTitle());
@@ -60,7 +64,7 @@ public class SuperAdapter extends ArrayAdapter<Supermarket> implements View.OnCl
 
         viewHolder.superDelete.setTag(position);
         viewHolder.superDelete.setOnClickListener(this);
-
+        notifyDataSetChanged();
         return view;
     }
 
@@ -76,5 +80,6 @@ public class SuperAdapter extends ArrayAdapter<Supermarket> implements View.OnCl
     @Override
     public void onClick(View view) {
         mCallBack.click(view);
+        notifyDataSetChanged();
     }
 }
