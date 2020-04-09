@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by zzl on 18-8-20.
+ * Created by zzl on 18-3-20.
  */
 
 public class ConvenFragment extends Fragment {
@@ -53,7 +53,6 @@ public class ConvenFragment extends Fragment {
     private void initView() {
         tabLayout = view.findViewById(R.id.tab_layout);
         viewPager = view.findViewById(R.id.view_pager);
-
     }
 
     private void fragmentChange() {
@@ -63,7 +62,6 @@ public class ConvenFragment extends Fragment {
         ente_fragment = new EnteFragment();
         sport_fragment = new SportFragment();
         mili_fragment = new MiliFragment();
-
 
         fragmentList.add(super_fragment);
         fragmentList.add(ente_fragment);

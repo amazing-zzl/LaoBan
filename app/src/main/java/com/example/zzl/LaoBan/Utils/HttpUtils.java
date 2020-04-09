@@ -128,7 +128,6 @@ public class HttpUtils {
 
         } catch (MalformedURLException e) {
             e.printStackTrace();
-
         }
         try {
             if (fileUrl != null) {

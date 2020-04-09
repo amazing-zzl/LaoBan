@@ -12,6 +12,8 @@ import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
 import com.example.zzl.LaoBan.Activity.ConvenActivity;
+import com.example.zzl.LaoBan.Activity.LocationActivity;
+import com.example.zzl.LaoBan.Activity.QandAActivity;
 import com.example.zzl.LaoBan.MyApplication;
 import com.example.zzl.LaoBan.R;
 
@@ -53,7 +55,9 @@ public class HomeFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 switch (i) {
                     case 0: {
-                        Toast.makeText(MyApplication.getContext(), "你点击了问题回答", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(getContext(), QandAActivity.class);
+                        startActivity(intent);
+                        getActivity().overridePendingTransition(R.anim.anim_scale, R.anim.anim_alpha);
                         break;
                     }
                     case 1: {
@@ -87,7 +91,9 @@ public class HomeFragment extends Fragment {
                         break;
                     }
                     case 8: {
-                        Toast.makeText(MyApplication.getContext(), "你点击了定位服务", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(getContext(), LocationActivity.class);
+                        startActivity(intent);
+                        getActivity().overridePendingTransition(R.anim.anim_scale, R.anim.anim_alpha);
                         break;
                     }
 

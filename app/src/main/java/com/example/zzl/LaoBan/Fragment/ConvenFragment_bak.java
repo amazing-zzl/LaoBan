@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by zzl on 18-8-20.
+ * Created by zzl on 18-3-20.
  */
 
 public class ConvenFragment_bak extends Fragment implements NewsAdapter.CallBack {

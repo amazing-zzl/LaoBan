@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- *
+ * 便民信息Activity,包括超市，医药等
  */
 public class ConvenActivity extends AppCompatActivity {
 

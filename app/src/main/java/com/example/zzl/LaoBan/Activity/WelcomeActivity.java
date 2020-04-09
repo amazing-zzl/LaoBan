@@ -13,8 +13,6 @@ import com.example.zzl.LaoBan.Utils.ApplicationUtil;
 import com.example.zzl.LaoBan.Utils.SharedPreUtil;
 
 public class WelcomeActivity extends AppCompatActivity {
-    //private boolean flag = false;
-    private Button btn_jump;
 
 
     final Handler handler = new Handler() {
@@ -67,7 +65,8 @@ public class WelcomeActivity extends AppCompatActivity {
 
         thread.start();
 
-        btn_jump = (Button) findViewById(R.id.btn_jump);
+        //private boolean flag = false;
+        Button btn_jump = (Button) findViewById(R.id.btn_jump);
         btn_jump.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

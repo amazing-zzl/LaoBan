@@ -30,11 +30,10 @@ import java.util.Random;
 
 /**
  * 超市活动
- * Created by zzl on 18-8-21.
+ * Created by zzl on 18-3-21
  */
 
-public class SuperFragment extends Fragment implements LoadListView.ILoadListener,
-        LoadListView.RLoadListener, SuperAdapter.CallBack {
+public class SuperFragment extends Fragment implements LoadListView.ILoadListener, LoadListView.RLoadListener, SuperAdapter.CallBack {
     private static final String TAG = "SuperFragment";
     //获取json的目标地址
     final String url = "http://47.98.50.35/hongfu.json";
@@ -45,7 +44,6 @@ public class SuperFragment extends Fragment implements LoadListView.ILoadListene
     private SuperAdapter adapter;
 
     private MyBitmapUtils myBitmapUtils;
-
 
     public SuperFragment() {
 
@@ -126,8 +124,6 @@ public class SuperFragment extends Fragment implements LoadListView.ILoadListene
                     }
                 });
             }
-
-
         } catch (JSONException e) {
             e.printStackTrace();
         }

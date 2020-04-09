@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:tint="#000"
+            app:srcCompat="@drawable/back"
+            android:id="@+id/back"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:paddingLeft="15dp"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:text="问题详情"
+            android:id="@+id/rec"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/rec_collect"
+            android:layout_width="13dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/sc_normal"
+            android:tint="#000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#f5f5f5"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:background="#000"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textSize="22sp"
+                    android:id="@+id/question_title"
+                    android:text="标题"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/question_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/question_title"
+                    android:text="时间"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/focus_or_not"
+                android:layout_marginRight="10dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:background="@drawable/shape_edit"
+                android:text="关注"
+                android:layout_width="65dp"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="20sp"
+                android:text="内容"
+                android:id="@+id/question_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:background="#969696"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="1sp"
+                android:text="回答"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#ffffff"
+            android:dividerHeight="3dp"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="2"></ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/answer_content"
+                android:layout_width="1808dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:hint="请输入要回答的内容~"></EditText>
+
+            <Button
+                android:id="@+id/answer"
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_button"
+                android:text="发送"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

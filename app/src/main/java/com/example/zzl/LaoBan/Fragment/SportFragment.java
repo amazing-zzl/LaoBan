@@ -30,7 +30,7 @@ import java.util.Random;
 import static com.example.zzl.LaoBan.Utils.HttpUtils.decodeUriAsBitmapFromNet;
 
 /**
- * Created by zzl on 18-8-21.
+ * Created by zzl on 18-3-21
  */
 public class SportFragment extends Fragment implements LoadListView.ILoadListener,
         LoadListView.RLoadListener, NewsAdapter.CallBack {

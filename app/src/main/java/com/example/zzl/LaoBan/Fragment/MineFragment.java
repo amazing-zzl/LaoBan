@@ -39,7 +39,7 @@ import java.util.Date;
 
 
 /**
- * Created by zzl on 18-8-20.
+ * Created by zzl on 18-3-20.
  */
 
 public class MineFragment extends Fragment implements View.OnClickListener {

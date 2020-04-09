@@ -3,7 +3,7 @@ package com.example.zzl.LaoBan.Bean;
 import android.graphics.Bitmap;
 
 /**
- * Created by zzl on 18-8-20.
+ * Created by zzl on 18-3-20.
  */
 
 public class News {

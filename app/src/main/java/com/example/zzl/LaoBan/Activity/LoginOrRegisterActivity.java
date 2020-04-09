@@ -10,7 +10,7 @@ import com.example.zzl.LaoBan.R;
 import com.example.zzl.LaoBan.Utils.ApplicationUtil;
 
 /**
- * Created by zzl on 18-8-20.
+ * Created by zzl on 18-3-20.
  */
 
 public class LoginOrRegisterActivity extends AppCompatActivity {

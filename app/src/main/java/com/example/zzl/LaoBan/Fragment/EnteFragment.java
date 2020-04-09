@@ -28,7 +28,7 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * Created by zzl on 18-8-21.
+ * Created by zzl on 18-3-21
  */
 
 public class EnteFragment extends Fragment implements LoadListView.ILoadListener,
@@ -43,8 +43,6 @@ public class EnteFragment extends Fragment implements LoadListView.ILoadListener
 
     private MyBitmapUtils myBitmapUtils;
 
-    public EnteFragment() {
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
